@@ -122,7 +122,6 @@ GVAR(TweakedAngle) = 0;
 
         if (
             !isNull _attachVehicle &&
-            {(_attachVehicle isKindOf "Car") || {_attachVehicle isKindOf "Tank"} || {_attachVehicle isKindOf "Air"} || {_attachVehicle isKindOf "Ship"}} &&
             {PLACE_RANGE_MIN call _testPositionIsValid}
         ) then {
             private _min = PLACE_RANGE_MIN;
