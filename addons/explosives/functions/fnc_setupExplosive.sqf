@@ -255,5 +255,3 @@ GVAR(TweakedAngle) = 0;
 
     END_COUNTER(pfeh);
 }, 0, [_unit, _magClassname, _setupObjectClass, _isAttachable]] call CBA_fnc_addPerFrameHandler;
-
-nil
