@@ -41,6 +41,8 @@ class RscText;
 class RscStructuredText;
 class RscPicture;
 class RscControlsGroupNoScrollbars;
+class IGUIBack;
+class RscListBox;
 
 #define X_OFFSET 0.2
 
