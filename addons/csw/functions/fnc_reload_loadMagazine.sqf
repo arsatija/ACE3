@@ -62,9 +62,9 @@ private _onFinish = {
             _args pushBack _unit;
         };        
 
-        TRACE_1("calling addTurretMag event",_args);
-        [QGVAR(addTurretMag), _args] call CBA_fnc_globalEvent;
-    }, [_magSource, _unit, [_vehicle, _turret, _magSource, _carryMag, _bestAmmoToSend]]] call CBA_fnc_execNextFrame;
+    TRACE_1("calling addTurretMag event",_args);
+    [QGVAR(addTurretMag), _args] call CBA_fnc_globalEvent;
+    _vehicle setVariable [QGVAR(reloader), _unit, true];
 };
 
 

@@ -57,6 +57,11 @@ private _targets = [];
 } forEach _objects;
 TRACE_2("",_fragRange,count _targets);
 
+// sort by distance
+private _targetsSort = _targets apply { [_x distanceSqr _fragPosAGL, _x] };
+_targetsSort sort true;
+_targets = _targetsSort apply {_x#1};
+
 private _fragCount = 0;
 
 private _fragArcs = [];
@@ -129,9 +134,12 @@ if (_targets isNotEqualTo []) then {
     } forEach _targets;
     TRACE_1("targeted",_fragCount);
     if (_fragCount > _maxFrags) exitWith {};
-    private _randomCount = ceil ((_maxFrags - _fragCount) * 0.35);
-    TRACE_1("",_randomCount);
-    private _sectorSize = 360 / (_randomCount max 1);
+} forEach _targets;
+TRACE_1("targeted",_fragCount);
+if (_fragCount > _maxFrags) exitWith { _fragCount };
+private _randomCount = ceil ((_maxFrags - _fragCount) * 0.35);
+TRACE_1("",_randomCount);
+private _sectorSize = 360 / (_randomCount max 1);
 
     for "_i" from 1 to _randomCount do {
         // Distribute evenly
@@ -151,7 +159,6 @@ if (_targets isNotEqualTo []) then {
         #endif
         INC(_fragCount);
     };
-};
 
 TRACE_1("total created",_fragCount);
 

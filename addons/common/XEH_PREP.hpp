@@ -141,6 +141,7 @@ PREP(muteUnit);
 PREP(muteUnitHandleInitPost);
 PREP(muteUnitHandleRespawn);
 PREP(nearestVehiclesFreeSeat);
+PREP(normalRandom);
 PREP(numberToDigits);
 PREP(numberToString);
 PREP(onAnswerRequest);

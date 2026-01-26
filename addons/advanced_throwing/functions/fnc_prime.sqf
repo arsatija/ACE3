@@ -23,10 +23,25 @@ _unit setVariable [QGVAR(primed), true];
 
 // Remove item before cooking to prevent weaponselect showing more throwables than there actually are in inventory
 private _throwableMag = (currentThrowable _unit) select 0;
-_unit removeItem _throwableMag;
+private _config = configFile >> "CfgMagazines" >> _throwableMag;
 
-private _throwableType = getText (configFile >> "CfgMagazines" >> _throwableMag >> "ammo");
-private _muzzle = _unit getVariable [QGVAR(activeMuzzle), ""];
+(_unit getVariable [QGVAR(activeMuzzle), ["", -1]]) params ["_muzzle", "_ammoCount"];
+
+// If there is 1 "round" left in the grenade, remove it from the player's inventory
+if (_ammoCount == 1 || {getNumber (_config >> "count") == 1}) then {
+    // Grenade has ammo set to 0, so remove that one specifically
+    private _ret = [_unit, _throwableMag, 0] call EFUNC(common,removeSpecificMagazine);
+    if (!_ret) then {
+        [_unit, _throwableMag] call CBA_fnc_removeMagazine;
+    };
+
+    // Get ammo count of new magazine
+    _unit setVariable [QGVAR(activeMuzzle), [_muzzle, _unit ammo _muzzle]];
+} else {
+    if (_ammoCount > 1 && {getNumber (_config >> "count") > 1}) then {
+        _unit setVariable [QGVAR(activeMuzzle), [_muzzle, _ammoCount - 1]];
+    };
+};
 
 // Set muzzle ammo to 0 to block vanilla throwing (can only be 0 or 1), removeItem above resets it
 _unit setAmmo [_muzzle, 0];
@@ -43,6 +58,9 @@ private _activeThrowable = createVehicle [_throwableType, _activeThrowableOld, [
 _unit setVariable [QGVAR(activeThrowable), _activeThrowable];
 deleteVehicle _activeThrowableOld;
 
+// Set _gunner for Throw Fired XEH
+private _gunner = _unit;
+
 // Throw Fired XEH
 [QGVAR(throwFiredXEH), [
     _unit, // unit
@@ -51,7 +69,8 @@ deleteVehicle _activeThrowableOld;
     _muzzle, // mode
     _throwableType, // ammo
     _throwableMag, // magazine
-    _activeThrowable // projectile
+    _activeThrowable, // projectile
+    _gunner // gunner
 ]] call CBA_fnc_globalEvent;
 
 // Set prime instigator
