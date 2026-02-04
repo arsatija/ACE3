@@ -43,15 +43,13 @@ if (_ammoCount == 1 || {getNumber (_config >> "count") == 1}) then {
     };
 };
 
-// Set muzzle ammo to 0 to block vanilla throwing, removing magazine above resets it
+// Set muzzle ammo to 0 to block vanilla throwing (can only be 0 or 1), removeItem above resets it
 _unit setAmmo [_muzzle, 0];
 
-private _throwableType = getText (_config >> "ammo");
-private _ammoConfig = configFile >> "CfgAmmo" >> _throwableType;
-
 // Handle weird scripted grenades (RHS) which could cause unexpected behaviour
-if (inheritsFrom (_ammoConfig >> QGVAR(replaceWith)) isEqualTo _ammoConfig) then {
-    _throwableType = getText (_ammoConfig >> QGVAR(replaceWith));
+private _nonInheritedCfg = configProperties [configFile >> "CfgAmmo" >> _throwableType, 'configName _x == QGVAR(replaceWith)', false];
+if ((count _nonInheritedCfg) == 1) then {
+    _throwableType = getText (_nonInheritedCfg select 0);
 };
 
 // Create actual throwable globally
@@ -80,10 +78,10 @@ private _gunner = _unit;
 
 if (_showHint) then {
     // Show primed hint
-    private _displayNameShort = getText (_config >> "displayNameShort");
-    private _picture = getText (_config >> "picture");
+    private _displayNameShort = getText (configFile >> "CfgMagazines" >> _throwableMag >> "displayNameShort");
+    private _picture = getText (configFile >> "CfgMagazines" >> _throwableMag >> "picture");
 
-    [[_displayNameShort, LLSTRING(Primed)] joinString " ", _picture] call EFUNC(common,displayTextPicture);
+    [[_displayNameShort, localize LSTRING(Primed)] joinString " ", _picture] call EFUNC(common,displayTextPicture);
 
     // Change controls hint for RMB
     call FUNC(updateControlsHint);

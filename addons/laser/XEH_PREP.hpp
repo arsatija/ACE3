@@ -18,4 +18,5 @@ PREP(seekerFindLaserSpot);
 PREP(setLaserCode);
 PREP(shootCone);
 PREP(shootRay);
+PREP(showVehicleHud);
 PREP(toggleLST);

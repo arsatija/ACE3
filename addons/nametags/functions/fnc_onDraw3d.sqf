@@ -92,7 +92,7 @@ if (_enabledTagsNearby) then {
             {!isObjectHidden _x}
         };
         private _crewMen = [];
-        if (!isNull objectParent ACE_player) then {
+        if (vehicle ACE_player != ACE_player) then {
             _crewMen = (crew vehicle ACE_player) select {
                 _x call _fnc_basicChecks &&
                 {lineIntersectsSurfaces [_camPosASL, eyePos _x, ACE_player, _x, true, 1, "GEOM", "NONE"] isEqualTo []} &&

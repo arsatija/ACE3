@@ -23,7 +23,7 @@ private _dropMode = ACE_player getVariable [QGVAR(dropMode), false];
 private _mmb = [format [LLSTRING(ChangePower), localize "STR_dik_shift"], LLSTRING(Extend)] select _dropMode;
 
 if (!_primed) then {
-    _mmb = [_mmb, LLSTRING(Cook)] joinString " / ";
+    _mmb = [_mmb, localize LSTRING(Cook)] joinString " / ";
 };
 private _modifier = if (_dropMode || {GVAR(throwStepSetting) == 1}) then {
     []

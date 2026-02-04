@@ -937,6 +937,7 @@
             <Hungarian>Kaliber: 9,3x64 mm nyomkövető&lt;br /&gt;Lövedékek: 10&lt;br /&gt;Használható: Cyrus</Hungarian>
             <Ukrainian>Калібр: 9,3x64 мм трасуючі&lt;br /&gt;Набоїв: 10&lt;br /&gt;Використовуються з: Cyrus</Ukrainian>
         </Key>
+        <!-- 9.3x64 mm 10Rnd -->
         <Key ID="STR_ACE_Ballistics_10Rnd_93x64_DMR_05_Mag_TracerName">
             <English>9.3 mm 10Rnd Tracer Mag</English>
             <Czech>9.3 mm 10náb. Svítící Zásobník</Czech>
@@ -1098,6 +1099,7 @@
             <Turkish>#00 Irisaçma</Turkish>
             <Ukrainian>#00 Картеч</Ukrainian>
         </Key>
+        <!-- Shotguns -->
         <Key ID="STR_ACE_Ballistics_12Gauge_Pellets_No00_Buck_NameShort">
             <English>#00 Buckshot</English>
             <Czech>#00 Broky velké</Czech>
@@ -1391,6 +1393,7 @@
             <Hungarian>Kaliber: .338 Norma Magnum nyomkövető&lt;br /&gt;Lövedékek: 130&lt;br /&gt;Használható: SPMG</Hungarian>
             <Ukrainian>Калібр: .338 Norma Magnum трасуючі&lt;br /&gt;Набоїв: 130&lt;br /&gt;Використовуються в: SPMG</Ukrainian>
         </Key>
+        <!-- .338 Norma Magnum -->
         <Key ID="STR_ACE_Ballistics_130Rnd_338_Mag_TracerName">
             <English>.338 NM 130Rnd Tracer Belt</English>
             <Czech>.338 NM 130náb. Svítící Pás</Czech>
@@ -1553,6 +1556,7 @@
             <Hungarian>Kaliber: 9,3x64 mm nyomkövető&lt;br /&gt;Lövedékek: 150&lt;br /&gt;Használható: Navid</Hungarian>
             <Ukrainian>Калібр: 9,3x64 мм трасуючі&lt;br /&gt;Набоїв: 150&lt;br /&gt;Використовуються з: Навід</Ukrainian>
         </Key>
+        <!-- 9.3x64 mm 150Rnd Belt-->
         <Key ID="STR_ACE_Ballistics_150Rnd_93x64_Mag_TracerName">
             <English>9.3 mm 150Rnd Tracer Belt</English>
             <Czech>9.3 mm 150náb. Svítící Pás</Czech>
@@ -1840,6 +1844,7 @@
             <Hungarian>Kaliber: 6,5x47 mm (HPBT Scenar)&lt;br /&gt;Lövedékek: 20&lt;br /&gt;Használható: QBU-88</Hungarian>
             <Ukrainian>Калібр: 6,5x47 мм (експансивні Scenar)&lt;br /&gt;Набоїв: 20&lt;br /&gt;Використовуються з: QBU-88</Ukrainian>
         </Key>
+        <!-- QBU -->
         <Key ID="STR_ACE_Ballistics_20Rnd_65x47_Scenar_mag_Name">
             <English>6.5x47 mm 20Rnd Mag (HPBT Scenar)</English>
             <Czech>6.5x47 mm 20náb. Zásobník (HPBT Scenar)</Czech>
@@ -2164,6 +2169,7 @@
             <Hungarian>Kaliber: 7,62x51 mm Nyomjelző&lt;br /&gt;Lövedékek: 20&lt;br /&gt;Használható: Mk18 ABR</Hungarian>
             <Ukrainian>Калібр: 7,62x51 мм трасуючі&lt;br /&gt;Набоїв: 20&lt;br /&gt;Використовуються з: Mk18 ABR</Ukrainian>
         </Key>
+        <!-- 7.62x51 mm -->
         <Key ID="STR_ACE_Ballistics_20Rnd_762x51_mag_TracerName">
             <English>7.62 mm 20Rnd Mag (Tracer)</English>
             <Czech>7.62 mm 20náb. Svítící Zásobník</Czech>
@@ -2715,6 +2721,7 @@
             <Hungarian>Kaliber: 5,56x45 mm Nyomjelző IR-DIM&lt;br /&gt;Lövedékek: 30&lt;br /&gt;Használható: TRG-20, TRG-21/EGLM, Mk20/C/EGLM, SDAR</Hungarian>
             <Ukrainian>Калібр: 5,56x45 мм ІЧ-трасуючі&lt;br /&gt;Набоїв: 30&lt;br /&gt;Використовуються з: TRG-20, TRG-21/EGLM, Mk20/C/EGLM, SDAR</Ukrainian>
         </Key>
+        <!-- 5.56x45 mm -->
         <Key ID="STR_ACE_Ballistics_30Rnd_556x45_mag_Tracer_DimName">
             <English>5.56 mm 30rnd Tracer IR-DIM Mag</English>
             <Czech>5.56 mm 30náb. Svítící IR-DIM Zásobník</Czech>
@@ -2987,6 +2994,7 @@
             <Hungarian>Kaliber: 6,5x39 mm Nyomjelző IR-DIM&lt;br /&gt;Lövedékek: 30&lt;br /&gt;Használható: Katiba</Hungarian>
             <Ukrainian>Калібр: 6,5x39 мм ІЧ-трасуючі&lt;br /&gt;Набоїв: 30&lt;br /&gt;Використовуються з: Katiba</Ukrainian>
         </Key>
+        <!-- KATIBA -->
         <Key ID="STR_ACE_Ballistics_30Rnd_65x39_caseless_green_mag_Tracer_DimName">
             <English>6.5 mm 30Rnd Tracer IR-DIM Mag</English>
             <Czech>6.5 mm 30náb. Svítící IR-DIM Zásobník</Czech>
@@ -3149,6 +3157,7 @@
             <Hungarian>Kaliber: 6,5x39 mm Nyomjelző IR-DIM&lt;br /&gt;Lövedékek: 30&lt;br /&gt;Használható: MX/C/M/SW/3GL</Hungarian>
             <Ukrainian>Калібр: 6,5x39 мм ІЧ-трасуючі&lt;br /&gt;Набоїв: 30&lt;br /&gt;Використовуються з: MX/C/M/SW/3GL</Ukrainian>
         </Key>
+        <!-- MX -->
         <Key ID="STR_ACE_Ballistics_30Rnd_65x39_caseless_mag_Tracer_DimName">
             <English>6.5 mm 30Rnd Tracer IR-DIM Mag</English>
             <Czech>6.5 mm 30náb. Svítící IR-DIM Zásobník</Czech>

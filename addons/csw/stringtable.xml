@@ -1093,6 +1093,7 @@
             <Chinesesimp>交互时间系数</Chinesesimp>
             <Ukrainian>Коеф. часу взаємодії</Ukrainian>
         </Key>
+        <!-- Used in rearm to remove the [CSW] prefix from magazine names, so adjust when necessary -->
         <Key ID="STR_ACE_CSW_regex">
             <English>^\[CSW\]</English>
             <Czech>^\[CSW\]</Czech>

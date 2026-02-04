@@ -211,6 +211,7 @@
             <Ukrainian>Це інженер</Ukrainian>
         </Key>
         <Key ID="STR_ACE_Repair_AssignEngineerRole_role_advanced">
+            <!-- Advanced Engineer is to long for some fields so it it shorted to Adv. -->
             <English>Adv. Engineer</English>
             <Czech>Pokročilý Inženýr</Czech>
             <French>Ing. avancé</French>
@@ -546,7 +547,7 @@
             <Portuguese>Aviônica</Portuguese>
             <Russian>Авионику</Russian>
             <German>Avionik</German>
-            <Korean>항공 전자 기기</Korean>
+            <Korean>항공 전자</Korean>
             <Japanese>アビオニクス</Japanese>
             <Chinese>航電系統</Chinese>
             <Chinesesimp>航电系统</Chinesesimp>
@@ -563,7 +564,7 @@
             <Portuguese>Carroceria</Portuguese>
             <Russian>Кузов</Russian>
             <German>Fahrgestell</German>
-            <Korean>차체</Korean>
+            <Korean>몸체</Korean>
             <Japanese>車体</Japanese>
             <Chinese>車身</Chinese>
             <Chinesesimp>车身</Chinesesimp>
@@ -958,7 +959,7 @@
             <Portuguese>Tubo de Pitot</Portuguese>
             <Russian>Кокпит</Russian>
             <German>Pitotrohr</German>
-            <Korean>피토관</Korean>
+            <Korean>동압관</Korean>
             <Japanese>ピトー管</Japanese>
             <Chinese>空速管</Chinese>
             <Chinesesimp>空速管</Chinesesimp>
@@ -1096,7 +1097,7 @@
             <Portuguese>Arranque</Portuguese>
             <Russian>Стартер</Russian>
             <German>Anlasser</German>
-            <Korean>시동 장치</Korean>
+            <Korean>점화기</Korean>
             <Japanese>スターター</Japanese>
             <Chinese>發動機</Chinese>
             <Chinesesimp>发动机</Chinesesimp>
@@ -1181,7 +1182,7 @@
             <Portuguese>Rotor de Cauda</Portuguese>
             <Russian>Рулевой винт</Russian>
             <German>Heckrotor</German>
-            <Korean>테일 로터</Korean>
+            <Korean>꼬리 로터</Korean>
             <Japanese>テールローター</Japanese>
             <Chinese>尾槳</Chinese>
             <Chinesesimp>尾桨</Chinesesimp>
@@ -1199,7 +1200,7 @@
             <Portuguese>Estabilizador Vertical</Portuguese>
             <Russian>Вертикальный стабилизатор</Russian>
             <German>Seitenleitwerk</German>
-            <Korean>수직안정기</Korean>
+            <Korean>수직 안정판</Korean>
             <Japanese>垂直安定装置</Japanese>
             <Chinese>垂直穩定</Chinese>
             <Chinesesimp>垂直稳定</Chinesesimp>
@@ -1662,7 +1663,7 @@
             <Portuguese>Mostra uma notificação quando você repara um veículo</Portuguese>
             <Russian>Отображать оповещение каждый раз, когда вы ремонтируете транспорт</Russian>
             <German>Zeige eine Nachricht, wann immer du ein Fahrzeug reparierst</German>
-            <Korean>수리 시 화면에 글자로 알림이 뜹니다</Korean>
+            <Korean>수리시 화면에 글자로 알림이 뜹니다</Korean>
             <Japanese>車両の修理を始めると、画面に通知を出します</Japanese>
             <Chinese>每當維修載具時顯示通知</Chinese>
             <Chinesesimp>每当维修载具时显示通知</Chinesesimp>
@@ -1678,7 +1679,7 @@
             <Portuguese>Mostrar texto quando reparar</Portuguese>
             <Russian>Отображать текст при ремонте</Russian>
             <German>Zeige Text bei Reperatur an</German>
-            <Korean>수리 시 화면에 글자 표시</Korean>
+            <Korean>수리시 화면에 글자 표시</Korean>
             <Japanese>修理時に文章で通知する</Japanese>
             <Chinese>顯示維修文本</Chinese>
             <Chinesesimp>显示维修文本</Chinesesimp>
@@ -2517,7 +2518,7 @@
             <Portuguese>Instalação e veículo de reparo</Portuguese>
             <Russian>Только у ремонтного транспорта или ремонтных сооружений</Russian>
             <German>Reperatureinrichtung oder Reperaturfahrzeug</German>
-            <Korean>수리 시설 혹은 차량</Korean>
+            <Korean>수리 시설혹은 차량</Korean>
             <Japanese>修理施設または車両のみ</Japanese>
             <Chinese>維修設施或載具旁</Chinese>
             <Chinesesimp>维修设施或载具旁</Chinesesimp>

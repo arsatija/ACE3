@@ -83,6 +83,7 @@
             <Turkish>ACE Izleyici</Turkish>
             <Ukrainian>ACE Глядач</Ukrainian>
         </Key>
+        <!-- Interface strings -->
         <Key ID="STR_ACE_Spectator_TooltipEngineer">
             <English>Engineer</English>
             <Czech>Inženýr</Czech>
@@ -336,6 +337,7 @@
             <Turkish>Önceki Takım</Turkish>
             <Ukrainian>Попередній юніт</Ukrainian>
         </Key>
+        <!-- Controls -->
         <Key ID="STR_ACE_Spectator_uiIcons">
             <English>Icons</English>
             <Czech>Ikony</Czech>
